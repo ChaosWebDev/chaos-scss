@@ -1,6 +1,6 @@
 {
   "name": "chaos-scss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Lightweight SASS/SCSS Styling Library",
   "main": "dist/index.css",
   "scripts": {

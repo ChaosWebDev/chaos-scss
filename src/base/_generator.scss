@@ -1,0 +1,7 @@
+@mixin generate-utils($map, $prefix, $property) {
+    @each $key, $value in $map {
+        .#{$prefix}-#{$key} {
+            #{$property}: #{$value};
+        }
+    }
+}

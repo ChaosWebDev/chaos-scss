@@ -1,0 +1,40 @@
+@use "sass:string";
+
+$flex-directions: (
+    "row": row,
+    "column": column
+);
+
+$align-items: (
+    "start": flex-start,
+    "center": center,
+    "end": flex-end,
+    "stretch": stretch
+);
+
+$justify-content: (
+    "start": flex-start,
+    "center": center,
+    "end": flex-end,
+    "between": space-between,
+    "around": space-around,
+    "evenly": space-evenly
+);
+
+$gaps: (
+    "sm": 0.5rem,
+    "md": 1rem,
+    "lg": 1.5rem,
+    "xl": 2rem
+);
+
+$flex-wraps: (
+    "wrap": wrap,
+    "nowrap": nowrap
+);
+
+$flex-grow-shrink: (
+    "1": 1,
+    "auto": auto,
+    "none": none
+);

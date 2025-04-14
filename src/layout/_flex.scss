@@ -1,0 +1,20 @@
+@use "maps" as *;
+@use "generator" as *;
+
+// Flex Direction
+@include generate-flex-direction($flex-directions);
+
+// Align Items
+@include generate-align-items($align-items);
+
+// Justify Content
+@include generate-justify-content($justify-content);
+
+// Gap Utilities
+@include generate-gap-utilities($gaps);
+
+// Flex Wrap
+@include generate-flex-wrap($flex-wraps);
+
+// Flex Grow/Shrink
+@include generate-flex-values($flex-grow-shrink);

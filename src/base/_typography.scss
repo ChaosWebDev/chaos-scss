@@ -1,0 +1,39 @@
+@use "maps" as *;
+@use 'generator' as *;
+
+// Font Family
+@each $name, $stack in $font-families {
+    .font-#{$name} {
+        font-family: $stack;
+    }
+}
+
+// Font Weight
+@include generate-utils($font-weights, font, font-weight);
+
+// Font Style
+@include generate-utils($font-styles, font, font-style);
+
+// Text Decoration
+@include generate-utils($text-decorations, text, text-decoration);
+
+// Text Transform
+@include generate-utils($text-transforms, text, text-transform);
+
+// Text Align
+@include generate-utils($text-alignments, text, text-align);
+
+// Text Size
+@include generate-utils($text-sizes, text, font-size);
+
+// Line Height
+@include generate-utils($line-heights, leading, line-height);
+
+// Letter Spacing
+@include generate-utils($letter-spacing, tracking, letter-spacing);
+
+// Cursor (example without a map since it's just one or two)
+.cursor-pointer,
+.clickable {
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.25em;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3 ease, color 0.3 ease, border-color 0.3 ease;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        filter: brightness(90%);
+    }
+
+    &.primary {
+        background: var(--btn-primary-bg, teal);
+        color: var(--btn-primary-fg, white);
+    }
+
+    &.secondary {
+        background: var(--btn-secondary-bg, green);
+        color: var(--btn-secondary-fg, white);
+    }
+
+    &.alert {
+        background: var(--btn-alert-bg, red);
+        color: var(--btn-alert-fg, black);
+    }
+
+    &.confirm {
+        background: var(--btn-alert-confirm-bg, maroon);
+        color: var(--btn-alert-confirm-fg, white);
+    }
+
+    &.outline {
+        background: transparent;
+
+        &.primary {
+            border-color: var(--btn-primary-bg, teal);
+            color: var(--btn-primary-bg, teal);
+        }
+
+        &.secondary {
+            border-color: var(--btn-secondary-bg, green);
+            color: var(--btn-secondary-bg, green);
+        }
+
+        &.alert {
+            border-color: var(--btn-alert-bg, red);
+            color: var(--btn-alert-bg, red);
+        }
+
+        &.confirm {
+            border-color: var(--btn-alert-confirm-bg, maroon);
+            color: var(--btn-alert-confirm-bg, maroon);
+        }
+    }
+}

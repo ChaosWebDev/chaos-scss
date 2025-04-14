@@ -1,0 +1,47 @@
+$light-theme: (
+    fontSize: 18pt,
+    bodyBG: midnightblue,
+    bodyFG: aliceblue,
+    navBG: midnightblue,
+    navFG: aliceblue,
+    navHoverBG: #000000,
+    navHoverFG: #00ffff,
+    borderColor: #ffd195,
+    important: #c19012,
+    alert: red,
+    good: green
+);
+
+$dark-theme: (
+    fontSize: 18pt,
+    bodyBG: #111,
+    bodyFG: #eee,
+    navBG: #111,
+    navFG: #eee,
+    navHoverBG: #222,
+    navHoverFG: #ff0,
+    borderColor: #444,
+    important: #ffc107,
+    alert: red,
+    good: green
+);
+
+@mixin apply-theme($theme) {
+    @each $name, $val in $theme {
+        --#{$name}: #{$val};
+    }
+}
+
+:root {
+    @include apply-theme($light-theme);
+}
+
+[data-theme="dark"] {
+    @include apply-theme($dark-theme);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include apply-theme($dark-theme);
+    }
+}

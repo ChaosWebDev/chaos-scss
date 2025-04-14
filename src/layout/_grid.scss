@@ -1,0 +1,41 @@
+// * Mixin for setting grid * //
+@mixin grid($cols: 2, $col-spacing: auto) {
+    display: grid;
+    grid-template-columns: repeat($cols, $col-spacing);
+}
+
+// * Establishing Grids columns 2 - 12 * //
+@for $i from 2 through 12 {
+    .grid-#{$i}-auto {
+        @include grid($i);
+    }
+
+    .grid-#{$i}-even {
+        @include grid($i, 1fr);
+    }
+}
+
+
+// * Mixin for setting set column widths * //
+@mixin cols-set($cols: -1) {
+    grid-column: 1 / #{$cols};
+}
+
+// * Mixin for setting spanning column widths * //
+@mixin cols-span($start: 1, $span: 2) {
+    grid-column: #{$start} / span #{$span};
+}
+
+// * Establishing .col-#
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        grid-column: 1 / #{$i}
+    }
+}
+
+// * Establishing .col-span-#
+@for $i from 1 through 12 {
+    .col-span-#{$i} {
+        grid-column: span #{$i};
+    }
+}

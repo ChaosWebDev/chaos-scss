@@ -1,0 +1,48 @@
+@mixin generate-flex-direction($map) {
+    @each $key, $val in $map {
+        .flex-#{$key} {
+            display: flex;
+            flex-direction: $val;
+        }
+    }
+}
+
+@mixin generate-align-items($map) {
+    @each $key, $val in $map {
+        .align-#{$key} {
+            align-items: $val;
+        }
+    }
+}
+
+@mixin generate-justify-content($map) {
+    @each $key, $val in $map {
+        .justify-#{$key} {
+            justify-content: $val;
+        }
+    }
+}
+
+@mixin generate-gap-utilities($map) {
+    @each $key, $val in $map {
+        .gap-#{$key} {
+            gap: $val;
+        }
+    }
+}
+
+@mixin generate-flex-wrap($map) {
+    @each $key, $val in $map {
+        .#{$key} {
+            flex-wrap: $val;
+        }
+    }
+}
+
+@mixin generate-flex-values($map) {
+    @each $key, $val in $map {
+        .flex-#{$key} {
+            flex: $val;
+        }
+    }
+}

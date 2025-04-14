@@ -1,0 +1,27 @@
+{
+  "name": "chaos-scss",
+  "version": "1.0.0",
+  "description": "A Lightweight SASS/SCSS Styling Library",
+  "main": "dist/index.css",
+  "scripts": {
+    "dev": "sass --watch index.scss:dist/index.css",
+    "build": "sass index.scss dist/index.css --style=compressed",
+    "prepublishOnly": "npm run build"
+  },
+  "style": "dist/index.css",
+  "keywords": [
+    "css",
+    "styles",
+    "scss"
+  ],
+  "author": "Jordan Gerber",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  },
+  "files": [
+    "dist/",
+    "index.scss",
+    "src/"
+  ]
+}

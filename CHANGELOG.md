@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Version bump only — initial publish did not include version number.
+- Updated README.md to include links in badges.
 
 ## [0.0.1] - 2025-04-14
 

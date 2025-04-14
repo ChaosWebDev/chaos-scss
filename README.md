@@ -1,4 +1,4 @@
-[![version](https://img.shields.io/github/package-json/v/ChaosWebDev/chaos-scss)](https://github.com/ChaosWebDev/chaos-scss)  [![license](https://img.shields.io/github/license/ChaosWebDev/chaos-scss)](https://github.com/ChaosWebDev/chaos-scss/blob/main/LICENSE) [![issues](https://img.shields.io/github/issues/chaoswebdev/chaos-scss)](https://github.com/ChaosWebDev/chaos-scss/issues)
+[![npm version](https://img.shields.io/npm/v/chaos-scss)](https://www.npmjs.com/package/chaos-scss) [![license](https://img.shields.io/github/license/ChaosWebDev/chaos-scss)](https://github.com/ChaosWebDev/chaos-scss/blob/main/LICENSE) [![issues](https://img.shields.io/github/issues/chaoswebdev/chaos-scss)](https://github.com/ChaosWebDev/chaos-scss/issues)
 
 # Chaos-SCSS
 

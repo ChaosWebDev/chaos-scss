@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2025-04-15
+### Fixed
+- Utilities classes were not properly forwarded
+
 ## [1.0.2] - 2025-04-14
 
 ### Fixed
